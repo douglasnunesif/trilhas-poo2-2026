@@ -16,11 +16,12 @@ public class Main {
         UsuarioDAO dao = new UsuarioDAO();
         
         //Cadastrando um usuário
-        Usuario u1 = new Usuario("Carlos","carlos@email.com","1234");
+        Usuario u1 = new Usuario("Euler","euler@email.com","1234");
         dao.cadastrar(u1);
         
         //Testando o Login
-        boolean acesso = dao.login("carlos@email.com","1234");
+        boolean acesso = dao.login("euler@email.com","1234");
+        
         
         if(acesso){
             System.out.println("Login Realizado com sucesso!!!");
